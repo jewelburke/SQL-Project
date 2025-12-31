@@ -1,7 +1,7 @@
-# SQL Data Cleaning Project – Animal Observations (Eastern Europe)
+# SQL Data Cleaning Project – Wildlife Observations of Eastern Europe
 
 ## Project Overview
-This project demonstrates a full SQL-based data cleaning workflow applied to a raw animal observation dataset from Eastern Europe.  
+This project demonstrates a full SQL-based data cleaning workflow applied to a raw wildlife observation dataset from Eastern Europe.  
 The goal was to transform messy, raw data into an analysis-ready table using SQL.
 
 All transformations were performed in MySQL using staging tables to preserve the original dataset.
@@ -13,7 +13,7 @@ All transformations were performed in MySQL using staging tables to preserve the
 ## Dataset Description
 **Source:** GitHub
 **Region:** Eastern Europe  
-**Data Type:** Animal observations with physical measurements and geographic metadata
+**Data Type:** Wildlife observations with physical measurements and geographic metadata
 
 ### Key Challenges
 - Full-row duplicate records
