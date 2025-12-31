@@ -1,6 +1,6 @@
 -- ============================================
 -- Project: Data Cleaning
--- Dataset: Raw animal observation data of Eastern Europe (AI generated)
+-- Dataset: Raw wildlife observation data of Eastern Europe (AI generated)
 -- Source: Github
 -- ============================================
 
