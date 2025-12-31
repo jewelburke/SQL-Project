@@ -4,11 +4,11 @@
 -- Source: Github
 -- ============================================
 
--- 1. View raw data
+-- 1. View Raw Data
 SELECT * 
 FROM animal_data_dirty;
 
--- 2. Create staging table
+-- 2. Create Staging Table
 CREATE TABLE animal_data_cleaned
 LIKE animal_data_dirty;
 
@@ -43,7 +43,7 @@ WHERE row_num = 1;
 SELECT *
 FROM animal_data_deduped;
 
--- 4. Standardize the data
+-- 4. Standardize the Data
 ALTER TABLE animal_data_deduped
 RENAME COLUMN `ï»¿Animal type` TO `Animal Type`;
 
@@ -101,8 +101,7 @@ SET `Observation date` = STR_TO_DATE(`Observation date`, '%d.%m.%Y');
 ALTER TABLE animal_data_deduped
 MODIFY `Observation date` DATE;
 
--- 5. Populate blank values to Null
-
+-- 5. Populate Missing Values to Null
 UPDATE animal_data_deduped
 SET
   `Animal Type`       = NULLIF(TRIM(`Animal Type`), ''),
@@ -112,8 +111,7 @@ SET
   `Animal name`       = NULLIF(TRIM(`Animal name`), ''),
   `Data compiled by`  = NULLIF(TRIM(`Data compiled by`), '');
 
--- 6. Remove unncessarry columns/rows
-
+-- 6. Remove Unnecessary Columns/Rows
 SELECT *
 FROM animal_data_deduped
 WHERE `Animal Type` IS NULL;
