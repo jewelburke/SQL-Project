@@ -1,7 +1,7 @@
 -- ============================================
 -- Project: Data Cleaning
 -- Dataset: Raw wildlife observation data of Eastern Europe (AI generated)
--- Source: Github
+-- Source: Kaggle
 -- ============================================
 
 -- 1. View raw data
