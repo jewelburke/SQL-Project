@@ -11,7 +11,7 @@ All transformations were performed in MySQL using staging tables to preserve the
 ---
 
 ## Dataset Description
-**Source:** GitHub
+**Source:** Kaggle
 **Region:** Eastern Europe  
 **Data Type:** Wildlife observations with physical measurements and geographic metadata
 
